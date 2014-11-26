@@ -14,7 +14,6 @@ title: About me
         background-image: url(/assets/images/12456419423_797ebbe6d0_z.jpg);
     }
     </style>
-This is where you could put your "About me" page.
 
 <script type="text/javascript">
     Sticker.init('.sticker');
