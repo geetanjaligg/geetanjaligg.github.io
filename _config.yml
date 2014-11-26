@@ -1,12 +1,14 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: "hello"
+description: 
+meta_description: ""
 
 markdown: redcarpet
-pygments: true
-logo: false
+highlighter: pygments
+logo: true
 paginate: 15
+baseurl: /
+domain_name: 'http://yourblog-domain.com'
 
 # Details for the RSS feed generator
 url:            'blog url'
-author:         'Your Name'
+author:         'geetanjaligg'
