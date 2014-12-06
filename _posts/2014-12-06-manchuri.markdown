@@ -10,7 +10,7 @@ Weekend!
 
 Stuck up in an isolated place? Discover how to make best of weekends at home and satisfy your cravings Gobi Manchuri recipe! 
 
-{% flickr_image 14885314067 z %}
+<img src="http://farm4.static.flickr.com/3914/14885314067_7c06fb1084_z.jpg">
 
 <b>Ingredients : </b> 
 
