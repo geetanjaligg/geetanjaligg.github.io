@@ -1,0 +1,43 @@
+---
+layout: post
+title:  'Gobi Manchuri Recipe'
+date:   2014-12-06
+categories: blog cook food
+cover: http://farm6.static.flickr.com/5560/14655686019_57d0295ab0_b.jpg
+---
+
+Weekend! 
+
+Stuck up in an isolated place? Discover how to make best of weekends at home and satisfy your cravings Gobi Manchuri recipe! 
+
+{% flickr_image 14885314067 z %}
+
+<b>Ingredients : </b> 
+
+* 15-20 Cauliflower Florets
+* 3-4 Tablespoon of Corn flour
+* 2 Tablespoon of Maida flour
+* 2-3 Tablespoon of Besan powder
+* 1 Teaspoon of Black Pepper powder
+* 1/2 Teaspoon of Chilli Powder
+* Salt to taste
+
+For Ketchup : 
+
+* One cup of finely chopped Onion
+* One spoon of chopped Garlic and Ginger
+* Chilli and Tomato Sauce
+
+<b>Recipe : </b>
+
+Mix all the dry ingredients with water. 
+
+Dip florets and deep fry. Once the florets are golden browned, remove and keep them aside. 
+
+Mix a teaspoon of corn floor, pepper powder, salt, water and make sure its not too watery. Add sauce to this mix.
+
+Stir fry ketchup ingredients. Now add the above mix and fry. 
+
+Toss the fried Cauliflower with the ketchup and serve hot.`
+
+Let me know when you try this. =)
