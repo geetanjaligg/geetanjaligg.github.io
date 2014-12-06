@@ -1,6 +1,7 @@
 name: "geetanjaligg"
 description: 
 meta_description: ""
+plugins: _plugins
 
 markdown: redcarpet
 highlighter: pygments
