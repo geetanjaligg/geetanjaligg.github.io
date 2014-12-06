@@ -9,6 +9,15 @@ paginate: 15
 baseurl: /
 domain_name: 'http://geetanjaligg.in'
 
+permalink:   /:title/
+
 # Details for the RSS feed generator
 url:            'blog url'
 author:         'geetanjaligg'
+
+flickr:
+  cache_dir:       "./_cache/flickr"
+  api_key:          dbb73d4857727852c56af56f7380d289
+  shared_secret:    2e9344cd6f01362e
+  access_token:     72157649176451468-5a63266a133e12a7
+  access_secret:    c71e5fb0a7df594e

@@ -33,7 +33,8 @@ audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
 html {
-   font-family: sans-serif;
+  /* font-family: sans-serif;*/
+  font: 62.5%/1.65 "Open Sans",sans-serif;
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
@@ -176,7 +177,8 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    /*font-family: "Merriweather", serif;*/
+    font-family: "Open Sans",sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -184,7 +186,7 @@ body {
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
-}
+   }
 
 ::-moz-selection {
     background: #D6EDFF;
@@ -896,7 +898,7 @@ body:not(.post-template) .post-title {
 .post-content .full-img {
     width: 126%;
     max-width: none;
-    margin: 0 -13%;
+  /*  margin: 0 -13%; custom */
 }
 
 /* The author credit area after the post */
