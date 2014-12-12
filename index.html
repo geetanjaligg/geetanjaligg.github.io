@@ -50,9 +50,21 @@ about: 'about.html'
                 <img class="author-thumb" src="/assets/images/geetanjaligg.jpg" alt="Author's profile picture" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
-            {% if post.categories.size > 0 %} 
+            <!--{% if post.categories.size > 0 %} 
                 {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
-            {% endif %}
+            {% endif %}-->
+                {% for tag in post.categories %}
+                    {% if forloop.first == true %}
+                     on
+                    {% endif %}
+                    {% if forloop.last == true and forloop.index > 1 %}
+                        and       
+                    {% endif %}
+                    <a href="/tags.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>
+                    {% if forloop.last == false %}
+                        ,
+                    {% endif %}
+                {% endfor %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
             </time> 

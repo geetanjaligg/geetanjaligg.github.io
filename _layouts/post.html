@@ -21,10 +21,25 @@ author: false
             <h1 class="post-title">{{ page.title }}</h1>
             <br>
             <section class="post-meta">                
-                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-                {% if page.categories.size > 0 %} 
+                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>  
+                <!--{% if page.categories.size > 0 %} 
                     {{ page.categories | array_to_sentence_string | prepend: 'on ' }} 
                 {% endif %}
+                -->
+            
+              {% for tag in page.categories %}
+                    {% if forloop.first == true %}
+                     on
+                    {% endif %}
+                    {% if forloop.last == true and forloop.index > 1 %}
+                        and       
+                    {% endif %}
+                    <a href="/tags.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>
+                    {% if forloop.last == false %}
+                        ,
+                    {% endif %}
+                {% endfor %}
+               
             </section>
         </header>
 
