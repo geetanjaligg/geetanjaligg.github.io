@@ -13,7 +13,7 @@ domain_name: 'http://geetanjaligg.in'
 permalink:   /:title/
 
 # Details for the RSS feed generator
-url:            'blog url'
+url:            'http://geetanjligg.in'
 author:         'geetanjaligg'
 
 flickr:
