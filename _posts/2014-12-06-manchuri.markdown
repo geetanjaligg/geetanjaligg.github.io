@@ -3,7 +3,7 @@ layout: post
 title:  'Gobi Manchuri Recipe'
 date:   2014-12-06
 categories: blog cook food
-cover: http://farm6.static.flickr.com/5560/14655686019_57d0295ab0_b.jpg
+cover:
 ---
 
 Weekend! 
