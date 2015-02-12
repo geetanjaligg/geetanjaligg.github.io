@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-cover: '/images/DSC_0123.JPG'
+cover: '/images/5.jpg'
 about: 'about.html'
 archive: 'archive.html'
 ---
@@ -20,8 +20,8 @@ archive: 'archive.html'
             <h1 class="" style="color:white;">geetanjaliGg</h1>
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.archive }}'> Archives </a> {% endif %}
+                <!--{% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}-->
+                {% if page.about %} <a href='{{ site.baseurl }}{{ page.archive }}' style="color:white;"> Archives </a> {% endif %}
             </h2>
         </div>
     </div>
