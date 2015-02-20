@@ -1,0 +1,96 @@
+---
+layout: post
+title:  'Setup Kibana4 RC1: Freshly baked one! on Ubuntu'
+date:   2015-02-19
+categories: kibana elasticsearch
+cover: 
+---
+
+[Kibana4 RC1](http://www.elasticsearch.org/blog/kibana-4-rc1-is-now-available/) is here! No more struggling with aggregation (I hope so!). 
+
+#####Fresh setup:
+
+1. Make sure you've Java installed on your machine. Open up the terminal (Ctrl+Alt+T) and type `java -version` to check. If you get `java version "1.7.0_60"` or similar skip to 2, otherwise install Java before step 2.
+
+	```
+	sudo apt-get update
+	sudo apt-get install openjdk-7-jre-headless -y
+	```
+2. Download and install ES 1.4.3 
+
+    ```
+    cd ~
+    wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.3.deb
+    sudo dpkg -i elasticsearch-1.4.3.deb
+    ```
+3. Download Kibana4 RC1 and extract 
+
+    ```
+    wget https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-rc1-linux-x64.tar.gz
+    tar -xzvf kibana-4.0.0-rc1-linux-x64.tar.gz
+    ```
+4. Start ES and run Kibana
+
+    ```
+    sudo service elasticsearch start
+    cd kibana-4.0.0-rc1-linux-x64/bin/
+    ./kibana
+    ```
+5. Open Kibana in browser `http://<your_hostname>:5601`
+
+#####Already have ElasticSearch installed on your machine?
+
+If you already have ElasticSearch 1.4.3 then skip step 1. 
+
+1. Upgrade ES to 1.4.3 (assuming that you've ES 1.0+). ElasticSearch supports rolling upgrade process which is good because there won't be any downtime for end users. 
+	* Disable shard reallocation 
+
+	```
+	curl -XPUT localhost:9200/_cluster/settings -d '{
+	                "transient" : {
+	                    "cluster.routing.allocation.enable" : "none"
+	                }
+	        }'
+	```
+	* Shut down a single node within the cluster
+
+	```
+	curl -XPOST 'http://localhost:9200/_cluster/nodes/<node_name>/_shutdown'
+	```
+	* Download ES 1.4.3 and install. MAKE SURE YOU DON'T OVERWRITE `elasticsearch.yml` file. (Enter `n` when you get a prompt before overwrite.) 
+
+	```
+    cd ~
+    wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.3.deb
+    sudo dpkg -i elasticsearch-1.4.3.deb
+    ```
+    * Restart elasticsearch
+    * Re-enable shard reallocation
+
+    ```
+    curl -XPUT localhost:9200/_cluster/settings -d '{
+                "transient" : {
+                    "cluster.routing.allocation.enable" : "all"
+                }
+        }'
+    ```
+    * Repeat the same for all remaining nodes. 
+
+2. Download Kibana4 RC1 and extract
+
+    ```
+    wget https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-rc1-linux-x64.tar.gz
+    tar -xzvf kibana-4.0.0-rc1-linux-x64.tar.gz
+    ```
+3. Run Kibana
+
+    ```
+    cd kibana-4.0.0-rc1-linux-x64/bin/
+    ./kibana
+    ```
+4. Open Kibana in browser `http://<your_hostname>:5601`
+
+Happy visualizing! 
+
+
+	
