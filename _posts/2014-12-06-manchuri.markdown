@@ -3,6 +3,7 @@ layout: post
 title:  'Gobi Manchuri Recipe'
 date:   2014-12-06
 categories: blog cook food
+keywords: cook food manchuri gobi hobby
 cover:
 ---
 

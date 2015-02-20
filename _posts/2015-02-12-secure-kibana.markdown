@@ -3,6 +3,7 @@ layout: post
 title:  'How to secure Kibana with login prompt?'
 date:   2015-02-12
 categories: kibana elasticsearch
+keywords: kibana elasticsearch nginx login dashboard
 cover: 
 ---
 

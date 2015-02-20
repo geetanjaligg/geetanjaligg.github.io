@@ -3,6 +3,7 @@ layout: post
 title:  'Setup Kibana4 RC1: Freshly baked one! on Ubuntu'
 date:   2015-02-19
 categories: kibana elasticsearch
+keywords: kibana4 kibana RC1 elasticsearch rolling
 cover: 
 ---
 
