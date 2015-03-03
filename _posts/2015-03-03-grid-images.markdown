@@ -31,9 +31,7 @@ link:
 
 plugin:
 <div class="photoset-grid-custom" style="visibility: hidden;">
-  {% flickr_image 15930493695 b %}
-  {% flickr_image 15930493695 b %}
-  {% flickr_image 15930493695 b %}
+ 
 </div>
 
 
@@ -46,10 +44,7 @@ plugin:
 with flickr plugin:
 
 <div class="photoset-grid" data-layout="121">
-     {% flickr_image 15930493695 b %}
-  {% flickr_image 15930493695 b %}
-   {% flickr_image 15930493695 b %}
-  {% flickr_image 15930493695 b %}
+    
 </div>
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
