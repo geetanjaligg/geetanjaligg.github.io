@@ -898,7 +898,7 @@ body:not(.post-template) .post-title {
 .post-content .full-img {
     width: 126%;
     max-width: none;
-  /*  margin: 0 -13%; custom */
+    margin: 0 -13%; /*custom */
 }
 
 /* The author credit area after the post */
