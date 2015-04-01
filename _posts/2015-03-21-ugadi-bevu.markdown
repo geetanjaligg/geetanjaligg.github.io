@@ -2,7 +2,8 @@
 layout: post
 title:  'Ugadi Drink - Bevu'
 date:   2015-03-21
-categories: cook food recipe bevu
+categories: cook food recipe
+keywords: cook food bevu recipe hobby
 ---
 
 Portion : 50 glasses
